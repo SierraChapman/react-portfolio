@@ -1,16 +1,28 @@
+// import packages
 import React, { useEffect } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, Redirect} from "react-router-dom";
+// import utils
 import API from './utils/API';
 import { UPDATE_PROJECTS, LOADING, ERROR } from "./utils/actions";
 import { useProjectContext } from "./utils/GlobalState";
+// import pages
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+// import components
+import NoMatch from "./pages/NoMatch";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+// import styling
+import './App.css';
 
 function App() {
-  const [state, dispatch] = useProjectContext();
+  const dispatch = useProjectContext()[1];
 
   // get project data on App load
   useEffect(() => {
     dispatch({ type: LOADING });
-    console.log("retrieving project data...");
+    console.log("requesting project data...");
 
     API.getProjects()
       .then(res => {
@@ -25,8 +37,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Sierra Chapman</h1>
-      <h2>React Portfolio</h2>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Redirect exact path="/" to="/about" />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/projects" component={Projects} />
+          <Route component={NoMatch} />
+        </Switch>
+        <Footer/>
+      </Router>
     </div>
   );
 }
