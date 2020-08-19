@@ -4,7 +4,6 @@ import {
   LOADING,
   ERROR
 } from "./actions";
-import API from "./API";
 
 const ProjectContext = createContext();
 const { Provider } = ProjectContext;
@@ -42,20 +41,10 @@ const reducer = (state, action) => {
 const ProjectProvider = ({ value = [], ...props }) => {
   // define state and dispatch
   const [state, dispatch] = useReducer(reducer, {
-    projects: [], // projects saved in MongoDB
+    projects: value, // projects saved in MongoDB
     loading: false,
     error: false,
   });
-
-  // initialize state with projects from database (asynchronously)
-  API.getProjects()
-    .then(res => {
-      dispatch({ type: UPDATE_PROJECTS, projects: res.data});
-    })
-    .catch(err => {
-      console.log(err);
-      // dispatch({ type: ERROR, error: "An error occurred. Please try again later." });
-    });
 
   return <Provider value={[state, dispatch]} {...props} />;
 };
