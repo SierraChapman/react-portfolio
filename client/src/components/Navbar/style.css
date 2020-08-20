@@ -14,6 +14,10 @@ header .row {
     align-items: center;
 }
 
+nav {
+    margin-bottom: 0.25rem;
+}
+
 .nav-link {
     margin: 1rem;
 }
@@ -41,5 +45,9 @@ header .row {
         margin-left: 0.7rem;
         text-align: left;
         flex-grow: 1;
+    }
+
+    nav {
+        margin: 0;
     }
 }
