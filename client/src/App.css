@@ -14,6 +14,16 @@ main {
     margin-bottom: 1.5rem;
 }
 
+main a {
+    text-decoration: none;
+    color: rgb(150, 0, 219);
+}
+
+main a:hover {
+    text-decoration: none;
+    color: rgb(106, 0, 148);
+}
+
 @media (min-width: 576px) {
     .main {
         padding-top: 3.75rem;
