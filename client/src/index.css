@@ -13,10 +13,16 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 2rem;
   font-family: 'Libre Baskerville', serif;
   text-align: center;
-  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1.5rem;
 }
 
 @media (min-width: 576px) {
