@@ -5,3 +5,8 @@ section {
 .project-image {
     max-width: 100%;
 }
+
+#projects ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}

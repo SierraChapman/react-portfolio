@@ -15,8 +15,10 @@ function Project({ project }) {
       <p>{project.description}</p>
 
       <h4>Links</h4>
-      <p><a href={project.url}>Deployed Application</a></p>
-      <p><a href={project.repo}>GitHub Repository</a></p>
+      <ul>
+        <li><a href={project.url}>Deployed Application</a></li>
+        <li><a href={project.repo}>GitHub Repository</a></li>
+      </ul>
 
       <h4>Skills/Technologies Used</h4>
       <ul>
