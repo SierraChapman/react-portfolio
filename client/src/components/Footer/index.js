@@ -6,9 +6,11 @@ function Footer() {
   return (
     <footer>
       <Container>
-        <p>Created by Sierra Chapman</p>
-        <p>using MongoDB, Express, React, and Node.js</p>
-        <p><a href="https://github.com/SierraChapman/react-portfolio">View on GitHub</a></p>
+        <p>
+          Created by Sierra Chapman<br/> 
+          using MongoDB, Express, React, and Node.js
+        </p>
+        <div><a href="https://github.com/SierraChapman/react-portfolio">View on GitHub</a></div>
       </Container>
     </footer>
   );
