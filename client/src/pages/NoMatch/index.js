@@ -2,7 +2,11 @@ import React from 'react';
 import "./style.css";
 
 function NoMatch() {
-  return <h2>404 - Page Not Found</h2>;
+  return (
+    <main>
+      <h2>404 - Page Not Found</h2>
+    </main>
+  );
 }
 
 export default NoMatch;
