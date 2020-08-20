@@ -57,7 +57,7 @@ const projectSeed = [
     description: "This full-stack reading list application uses Express.js to program the server, Express-Handlebars to generate HTML pages, and MySQL to store data.",
     image: "reading-list.png",
     url: "https://reading-list-sc.herokuapp.com/",
-    repo: "https://sierrachapman.github.io/reading-list",
+    repo: "https://github.com/SierraChapman/reading-list",
     tags: [
       "Frontend",
       "Backend",
@@ -83,7 +83,7 @@ const projectSeed = [
     description: "Living Inside For Ever (L.I.F.E.) is intended to be a one stop shop for finding activities to do while following stay-at-home orders. It currently includes movies, video games, and recipes.",
     image: "life.png",
     url: "https://sierrachapman.github.io/life",
-    repo: "https://sierrachapman.github.io/life",
+    repo: "https://github.com/SierraChapman/life",
     tags: [
       "Frontend",
       "Teamwork",
@@ -103,7 +103,7 @@ const projectSeed = [
     description: "This project implements a timed multiple-choice quiz game. The score depends on the time remaining at the end and the number of incorrect answers. A high score list is stored locally on the browser.",
     image: "code-quiz.png",
     url: "https://sierrachapman.github.io/code-quiz/",
-    repo: "https://sierrachapman.github.io/code-quiz",
+    repo: "https://github.com/SierraChapman/code-quiz",
     tags: [
       "Frontend",
       "HTML",
@@ -119,7 +119,7 @@ const projectSeed = [
     description: "This weather dashboard displays current and forecasted weather from the OpenWeather API. The user can search for cities or select them from a list of recently viewed cities.",
     image: "weather-dashboard.png",
     url: "https://sierrachapman.github.io/weather-dashboard/",
-    repo: "https://sierrachapman.github.io/weather-dashboard",
+    repo: "https://github.com/SierraChapman/weather-dashboard",
     tags: [
       "Frontend",
       "HTML",
