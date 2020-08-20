@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Container from "./components/Container";
 // import styling
 import './App.css';
 
@@ -39,13 +40,15 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Redirect exact path="/" to="/about" />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/projects" component={Projects} />
-          <Route component={NoMatch} />
-        </Switch>
+          <Container className="main">
+            <Switch>
+              <Redirect exact path="/" to="/about" />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/projects" component={Projects} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Container> 
         <Footer/>
       </Router>
     </div>
