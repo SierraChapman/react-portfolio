@@ -1,0 +1,26 @@
+img.portrait {
+    width: 250px;
+    float: left;
+    border-radius: 125px;
+    margin: 0.5rem;
+}
+
+#about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 576px) {
+    img.portrait {
+        margin: 0;
+    }
+
+    #about div {
+        flex-direction: row;
+    }
+
+    #about div p {
+        margin-left: 2rem;
+    }
+}
