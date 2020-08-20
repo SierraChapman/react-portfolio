@@ -1,8 +1,13 @@
 import React from 'react';
 import "./style.css";
 
-function Container() {
-  return <h1>Container</h1>;
+// This container centers and limits the width of its contents
+function Container({ children, className }) {
+  return (
+    <div className={"container " + className}>
+      {children}
+    </div>
+  );
 }
 
 export default Container;

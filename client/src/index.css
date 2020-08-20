@@ -8,11 +8,21 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Roboto Slab', serif;
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 2rem;
+  }
 }

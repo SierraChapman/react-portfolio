@@ -1,0 +1,45 @@
+header {
+    background-color: rgb(37, 37, 37);
+    color: rgb(243, 243, 243);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 1rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+}
+
+.nav-link a:hover {
+    color: rgb(217, 152, 255);
+}
+
+.nav-link a.active {
+
+    color: rgb(198, 100, 255);
+}
+
+@media (min-width: 576px) {
+    header .row {
+        flex-direction: row;
+    }
+
+    .brand {
+        margin-left: 0.7rem;
+        text-align: left;
+        flex-grow: 1;
+    }
+}
