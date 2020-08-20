@@ -20,7 +20,7 @@ function Project({ project }) {
 
       <h4>Skills/Technologies Used</h4>
       <ul>
-        {project.tags.map(tag => <li>{tag}</li>)}
+        {project.tags.map(tag => <li key={tag}>{tag}</li>)}
       </ul>
 
     </section>
