@@ -8,6 +8,33 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-portfolio
 const projectSeed = [
   {
     rank: 1,
+    title: "Chore Hack",
+    description: "This is a full stack application for keeping track of chores within multi-user households. It is built on MySQL, Express, React, and Node.js",
+    image: "chore-hack.png",
+    url: "https://chore-hack.herokuapp.com/",
+    repo: "https://github.com/SierraChapman/chore-hack",
+    tags: [
+      "Frontend",
+      "Backend",
+      "Teamwork",
+      "JavaScript",
+      "SQL",
+      "React",
+      "Git",
+      "GitHub",
+      "Heroku",
+      "MySQL",
+      "JawsDB",
+      "Node.js",
+      "Axios",
+      "Bcryptjs",
+      "Express.js",
+      "Express-Session",
+      "Sequelize",
+    ],
+  },
+  {
+    rank: 2,
     title: "HIKR",
     description: "This is a full stack application for finding and logging hikes. Users are able to create an account, search for hikes by location, and write notes about their trip.",
     image: "hikr.png",
@@ -33,7 +60,7 @@ const projectSeed = [
     ],
   },
   {
-    rank: 2,
+    rank: 3,
     title: "Clicky Game",
     description: "The Clicky Game is a React application where users score points by clicking images they haven't clicked before and have to start over if they click the same image twice.",
     image: "clicky-game.png",
@@ -52,7 +79,7 @@ const projectSeed = [
     ],
   },
   {
-    rank: 3,
+    rank: 4,
     title: "Reading List",
     description: "This full-stack reading list application uses Express.js to program the server, Express-Handlebars to generate HTML pages, and MySQL to store data.",
     image: "reading-list.png",
@@ -78,7 +105,7 @@ const projectSeed = [
     ],
   },
   {
-    rank: 4,
+    rank: 5,
     title: "L.I.F.E.",
     description: "Living Inside For Ever (L.I.F.E.) is intended to be a one stop shop for finding activities to do while following stay-at-home orders. It currently includes movies, video games, and recipes.",
     image: "life.png",
@@ -98,7 +125,7 @@ const projectSeed = [
     ],
   },
   {
-    rank: 5,
+    rank: 6,
     title: "Code Quiz",
     description: "This project implements a timed multiple-choice quiz game. The score depends on the time remaining at the end and the number of incorrect answers. A high score list is stored locally on the browser.",
     image: "code-quiz.png",
@@ -114,7 +141,7 @@ const projectSeed = [
     ],
   },
   {
-    rank: 6,
+    rank: 7,
     title: "Weather Dashboard",
     description: "This weather dashboard displays current and forecasted weather from the OpenWeather API. The user can search for cities or select them from a list of recently viewed cities.",
     image: "weather-dashboard.png",
