@@ -3,7 +3,10 @@ const db = require("../models");
 
 // This file empties the Projects collection and inserts the projects below
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-portfolio");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/react-portfolio", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const projectSeed = [
   {
@@ -181,7 +184,7 @@ const projectSeed = [
   },
 ];
 
-db.Project.remove({})
+db.Project.deleteMany({})
   .then(() => db.Project.collection.insertMany(projectSeed.map((project, index) => ({ rank: index + 1, ...project }))))
   .then(data => {
     console.log(data.result.n + " records inserted!");
