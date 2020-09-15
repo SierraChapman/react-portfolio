@@ -9,7 +9,7 @@ function Projects() {
   return (
     <main id="projects">
       <h2>Featured Projects</h2>
-      {state.projects.map(project => <Project project={project} key={project.repo}/>)}
+      {state.projects.filter(project => project.rank <= 6).map(project => <Project project={project} key={project.repo}/>)}
     </main>
   );
 }
