@@ -33,19 +33,19 @@ The website has four pages: an about page, a projects page, a contact page, and 
 
 ### The About Page
 
-![About page](./screenshots/about-page.png)
+![About page](./readme-images/about-page.png)
 
 ### The Projects Page
 
-![Projects page](./screenshots/projects-page.gif)
+![Projects page](./readme-images/projects-page.gif)
 
 ### The Contact Page
 
-![Contact page](./screenshots/contact-page.png)
+![Contact page](./readme-images/contact-page.png)
 
 ### The 404 Error Page
 
-![404 page](./screenshots/404-page.png)
+![404 page](./readme-images/404-page.png)
 
 ## Technologies Used
 
