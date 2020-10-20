@@ -42,8 +42,8 @@ function App() {
         <Navbar />
           <Container className="main">
             <Switch>
-              <Redirect exact path="/" to="/projects" />
-              <Route exact path="/about" component={About} />
+              <Redirect exact path="/about" to="/" />
+              <Route exact path="/" component={About} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/projects" component={Projects} />
               <Route component={NoMatch} />
