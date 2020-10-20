@@ -8,9 +8,8 @@ function About() {
       <div>
         <img className="portrait" src={`${process.env.PUBLIC_URL}/assets/img/portrait.jpeg`} alt="Sierra Chapman" />
         <p>
-          I am a web development student located in Pleasanton, CA. 
-          I graduated B.S. in Physics from UC Davis in 2019, where I gained programming experience though using Python in astrophysics research. 
-          I am currently studying full-stack web development the UC Berkeley Coding Bootcamp. 
+          I am a full-stack web developer located in Pleasanton, CA and a recent graduate from the UC Berkeley Coding Bootcamp. 
+          Before going into web development, I earned a B.S. in Physics from UC Davis in 2019, where I gained programming experience though using Python for data analysis in astrophysics research. 
           In my free time, I enjoy running, playing video games, and reading science fiction and fantasy.
         </p>
       </div>
